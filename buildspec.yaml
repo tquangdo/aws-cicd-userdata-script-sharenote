@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - apt-get update -y
+      - apt-get install -y software-properties-common
+      - add-apt-repository ppa:openjdk-r/ppa
+      - apt-get update -y
+      - apt-get install -y openjdk-8-jdk
+      - apt-get install -y maven
+  build:
+    commands:
+      - mvn install -DskipTests
+artifacts:
+  files:
+    - target/demo-0.0.1-SNAPSHOT.jar
+    - appspec.yml
+    - Scripts/StopApp.sh
+    - Scripts/StartApp.sh
+    - Scripts/ValidateApp.sh
