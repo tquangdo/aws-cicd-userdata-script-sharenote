@@ -28,6 +28,8 @@ systemctl status codedeploy-agent.service
 tail -f /var/log/aws/codedeploy-agent/codedeploy-agent.log
 # =>
 # 2022-02-19 17:31:28 INFO  [codedeploy-agent(14531)]: Version file found in /opt/codedeploy-agent/.version with agent version OFFICIAL_1.3.2-1902_rpm.
+tail -f /var/log/aws/codedeploy-agent/codedeploy-agent.log | grep -e ERROR -e WARN
+# => blank!
 ```
 
 ## final result
