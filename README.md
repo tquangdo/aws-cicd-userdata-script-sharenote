@@ -6,6 +6,7 @@
 [![Report an issue](https://img.shields.io/badge/Support-Issues-green)](https://github.com/tquangdo/aws-cicd-userdata-script-sharenote/issues/new)
 
 ![overview](screenshots/overview.png)
+[cicd](https://docs.google.com/spreadsheets/d/1m8LuBQUzqIQ0bJYb3NJZOT4iSb78xUEG/edit#gid=1878281573&range=B8)
 
 ## reference
 [awsstudygroup](https://000023.awsstudygroup.com/vi)
